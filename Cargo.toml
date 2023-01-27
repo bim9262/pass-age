@@ -1,0 +1,20 @@
+[package]
+name = "pass-age"
+version = "0.1.0"
+edition = "2021"
+authors = ["Bryan Malyn <bim9262@gmail.com"]
+description = "Extension for pass to find passwords that haven't been updated in a while"
+license = "MIT OR Apache-2.0"
+keywords = ["pass", "passwordstore"]
+categories = [
+    "authentication",
+    "command-line-utilities",
+]
+repository = "https://github.com/bim9262/pass-age.git"
+
+[dependencies]
+anyhow = "1.0.68"
+chrono = "0.4.23"
+chrono-humanize = "0.2.2"
+clap = { version = "4.1.4", features = ["derive"] }
+glob = "0.3.1"
